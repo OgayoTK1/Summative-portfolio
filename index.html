@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogayo Andrew Ater - Personal Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Ogayo Andrew Ater</h1>
+        <p>Software Engineering Student | Aspiring DevOps Engineer</p>
+        <p>African Leadership University</p> 
+    </header>
+    
+    <nav>
+        <button class="menu-toggle">☰</button>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="#interest">Interest</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! My name is Ogayo Andrew Ater. Software engineering student passionate about technology and problem-solving. I enjoy learning about Python, JavaScript, and graphic design, and I'm currently exploring DevOps and infrastructure management.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li onclick="openModal('Library Catalog System', 'A Python-based project utilizing OOP concepts to manage a library\'s inventory efficiently.')">Library Catalog System</li>
+                <li onclick="openModal('University GPA Tracker', 'A Python application to calculate and track overall GPA and module grades.')">University GPA Tracker</li>
+                <li onclick="openModal('Hospital Optimization Scripts', 'Shell scripts for managing heart rate data and secure log backups.')">Hospital Optimization Scripts</li>
+            </ul>
+        </section>
+
+        <section id="interest">
+            <h2>Interest</h2>
+            <p>I am deeply interested in technology, particularly in Python and JavaScript. I enjoy exploring how software can solve real-world problems. Beyond tech, I love hiking and swimming. I’m also passionate about learning new skills, like mastering DevOps practices and infrastructure management.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python (OOP, scripting)</li>
+                <li>JavaScript (DOM manipulation, ES6+)</li>
+                <li>DevOps (Infrastructure management, SSH, Linux)</li>
+                <li>Graphic Design (UI/UX concepts)</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>African Leadership University</strong> - BSc. Software Engineering</p>
+            <p>Currently pursuing a bachelor's degree with a focus on software development and infrastructure management.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+
+                <button type="submit">Send</button>
+                <p id="formMessage"></p>
+            </form>
+        </section>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Ogayo Andrew Ater. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
